@@ -1,2 +1,2 @@
-# EyeTracking_SpeechGenerating
- C++ Desktop App - Eye Tracking & Speech Generating
+#  C++ Desktop App- Eye Tracking & Speech Generating (OpenCV)
+
