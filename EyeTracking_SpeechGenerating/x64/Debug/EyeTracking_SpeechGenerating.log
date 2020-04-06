@@ -2,4 +2,5 @@
   main.cpp
   Window.cpp
   Generating Code...
-  EyeTracking_SpeechGenerating.vcxproj -> C:\Users\quynh\Desktop\GitHub\EyeTracking_SpeechGenerating\x64\Debug\EyeTracking_SpeechGenerating.exe
+  LINK : C:\Users\nomie\Desktop\EyeTracking_SpeechGenerating\x64\Debug\EyeTracking_SpeechGenerating.exe not found or not built by the last incremental link; performing full link
+  EyeTracking_SpeechGenerating.vcxproj -> C:\Users\nomie\Desktop\EyeTracking_SpeechGenerating\x64\Debug\EyeTracking_SpeechGenerating.exe
