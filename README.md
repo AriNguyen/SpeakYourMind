@@ -24,3 +24,14 @@ Follow instructions in this [video](https://www.youtube.com/watch?v=FOIbK4bJKS8&
     - Right click on your project name in Property Manager Window -> Click **Add Existing Property Sheet** 
     - Select path/to/wxwidgets.props from the wxwidgets folder that just be downloaded
     - Build again
+## Use the Microsoft Speech SDK 5.3
+Follow the instruction in this link (https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ee125082%28v%3dvs.85%29)
+Since Microsoft Speech SDK is already included in Visual Studio code, we just need to create a new window console application and create a precompile header file to use the SDK
+## Create a new window console application in Visual Studio
+	-Click create a new profile
+	-search "window console application"
+	-select create a blank project 
+## Create precompile header file in Visual Studio
+	-In the Soucre Files folder -> Add -> New file -> header file -> name it STDAfx.h(optional)
+	-paste the source code form this link (https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ee125082%28v%3dvs.85%29) to STDAfx.h
+	-Include STDAfx.h file in the main.cpp file
