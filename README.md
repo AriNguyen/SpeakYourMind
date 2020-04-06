@@ -1,5 +1,4 @@
 #  C++ Desktop App - Eye Tracking & Speech Generating (OpenCV)
-## Overview
 - This is a project on making a desktop app using C++ 
 - Why using C++: 
 
