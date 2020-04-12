@@ -25,6 +25,8 @@ Follow instructions in this [video](https://www.youtube.com/watch?v=FOIbK4bJKS8&
     - Build again
 ## Eye Tracking
 ## Control Mouse Cursor
+Use the build-in function SetCursorPos(int x, int y) to move the cursor to the desired positions
+Learn more about SetCursorPos function in this [link](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setcursorpos)
 ## Speech Generating: Use the Microsoft Speech SDK 5.3
 Follow the instruction in this [link](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ee125082%28v%3dvs.85%29)
 Since Microsoft Speech SDK is already included in Visual Studio code, we just need to create a new window console application and create a precompile header file to use the SDK
