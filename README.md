@@ -3,7 +3,6 @@
 - Why using C++: 
 
 ## Visual Studio 2019 on Windows 10: Setting up
-- Create Windows Desktop App
 
 ### Install WxWidgets
 Follow instructions in this [video](https://www.youtube.com/watch?v=FOIbK4bJKS8&t=784s) at 10:10
