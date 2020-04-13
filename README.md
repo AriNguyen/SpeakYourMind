@@ -21,7 +21,8 @@ Follow instructions in this [video](https://www.youtube.com/watch?v=FOIbK4bJKS8&
     - Right click on your project name in Property Manager Window -> Click **Add Existing Property Sheet** 
     - Select path/to/wxwidgets.props from the wxwidgets folder that just be downloaded
 ## Eye Tracking
-Implement image gradient-based eye center algorithm by Fabian Timm
+Implement image gradient-based eye center algorithm by Fabian Timm. 
+Download the paper at [here](https://www.researchgate.net/publication/221415814_Accurate_Eye_Centre_Localisation_by_Means_of_Gradients)
 
 ## Control Mouse Cursor
 Use the build-in function SetCursorPos(int x, int y) to move the cursor to the desired positions
