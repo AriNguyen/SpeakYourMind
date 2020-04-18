@@ -38,7 +38,7 @@ public:
     void print_tree(Node *root, std::string data);                  // overloaded print_tree method for recursion
     void remove_prefix(std::string data);                           // remove prefix, if space in string
     std::string getNo_prefix() { return noPrefix; }                 // return noPrefi
-    std::string break_string(std::string data) {}                        // returns prefix
+    std::string break_string(std::string data);                        // returns prefix
 };
 
 #endif
