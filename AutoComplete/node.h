@@ -25,7 +25,7 @@ private:
     Node *child[ALPHABET_SIZE]; // points to next node, each pointer for each char in ASCII table (127 characters)
 
 public:
-    Node() {}  // Constructor
+    Node(); // Constructor
     ~Node() {} // Destructor
     void setEndOfWord(int boo) { this->EndOfWord = boo; }
     bool isEndOfWord() { return this->EndOfWord; }
