@@ -12,8 +12,21 @@
 #include "node.h"
 #include "trie.h"
 
-void Trie::isSpace(std::string data)
+void Trie::isSpace(std::string data) // checks user input for space
 {
+    char cstr[data.length()];
+
+    data.copy(cstr, data.length());
+    for (int i = 0; i < data.length(); i++)
+    {
+        if (cstr[i] == ' ')
+        {
+            space = true;
+            return;
+        }
+        else
+            continue;
+    }
 }
 
 void Trie::insert(std::string data)
@@ -84,8 +97,8 @@ void Trie::print_tree(Node *root, std::string data, std::string str)
 void Trie::print_tree(Node *root, std::string str) // overloaded function for recursive call
 {
     std::string str_tmp = str;
-    
-    for(int i = 0; i <128; i++)
+
+    for (int i = 0; i < 128; i++)
     {
         Node *adv = root;
         if (adv->child[i] != NULL)
@@ -106,8 +119,31 @@ void Trie::print_tree(Node *root, std::string str) // overloaded function for re
 
 void Trie::remove_prefix(std::string data)
 {
+    char cstr[data.length()];
+    data.copy(cstr, data.length());
+
+    for (int i = data.length(); i-- > 0;) // reverse loop
+    {
+        if (cstr[i] == ' ') 
+            break;
+        else 
+            cstr[i] = '\0';
+    }
+    noPrefix = cstr; 
 }
 
 std::string Trie::break_string(std::string data)
 {
+    char cstr[data.length()];
+    std::string str;
+    data.copy(cstr, data.length());
+
+    for (int i = data.length(); i-- > 0;)
+    {
+        if (cstr[i] == ' ')
+            break;
+        else
+            str.insert(str.begin(), cstr[i]);
+    }
+    return str;
 }
