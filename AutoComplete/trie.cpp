@@ -82,10 +82,10 @@ void Trie::print_tree(Node *root, std::string data, std::string str)
         if (adv->child[i] != NULL) // child exits
         {
             str += adv->getChar();
-            if (adv->isEndOfWord) // if points at the end of the root, print word
+            if (adv->isEndOfWord()) // if points at the end of the root, print word
             {
                 if (this->getSpace())
-                    std::cout << this->getNo_prefix;
+                    std::cout << this->getNo_prefix();
                 std::cout << str << std::endl;
             }
             print_tree(adv, str); // recursive call to keep moving down the tree
