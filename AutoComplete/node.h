@@ -21,14 +21,14 @@ class Node
 
 private:
     char c;                     // character
-    bool isEndOfWord;           // true if c marks the end of the word
+    bool EndOfWord;             // true if c marks the end of the word
     Node *child[ALPHABET_SIZE]; // points to next node, each pointer for each char in ASCII table (127 characters)
 
 public:
     Node() {}  // Constructor
     ~Node() {} // Destructor
-    void setEndOfWord(int boo) { this->isEndOfWord = boo; }
-    bool isEndOfWord() { this->isEndOfWord; }
+    void setEndOfWord(int boo) { this->EndOfWord = boo; }
+    bool isEndOfWord() { return this->EndOfWord; }
     void setChar(char ch) { this->c = ch; }
     char getChar() const { return this->c; }
 };
