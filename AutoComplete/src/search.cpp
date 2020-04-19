@@ -20,11 +20,13 @@ int main()
     std::string data;
     std::fstream dictionary;
     Trie complete_query;
-    std::string dict_path = "../data/words_dicitonary.json";
+    std::string dict_path = "/Users/aryanguyen/Desktop/PROJETCS/EyeTracking_SpeechGenerating/data/words.txt";
 
-    dictionary.open(dict_path, std::fstream::in); // read dictionary to trie data structure
+    // read dictionary to trie data structure
+    dictionary.open(dict_path, std::fstream::in); 
     if (dictionary.is_open())
     {
+        std::cout << dictionary;
         while (dictionary)
         {
             dictionary >> data;
@@ -33,16 +35,17 @@ int main()
     }
     else
     {
-        std::cout << "erro: file not open." << std::endl;
+        std::cout << "error: file not open." << std::endl;
         return -1;
     }
     dictionary.close();
     data.clear();
 
+    // Get user input and return options
     std::cout << "Enter search query: " << std::endl;
     std::getline(std::cin, data); // use getline to catch spaces
     complete_query.isSpace(data);
-    std::cout << "Your search options are: " << std::endl;
+    std::cout << "\nYour search options are: " << std::endl;
     if (complete_query.getSpace() == true)
     {
         complete_query.remove_prefix(data);
@@ -50,5 +53,6 @@ int main()
     }
     else
         complete_query.search(data);
+
     return 0;
 }
